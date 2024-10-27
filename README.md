@@ -1,8 +1,27 @@
-# React + Vite
+# News Feed - app 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*News Feed* is a project designed to present top headlines and present them in beautiful article pages.
 
-Currently, two official plugins are available:
+## Usage
+Once the website is opened, recent hot headlines are fetched. Users can navigate, search, and categorize them.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- User friendly card article appearance.
+- Category Selection.
+- Search Bar to filter the news.
+- Pagination buttons.
+- Navigate to the original article by clicking on the card.
+- All necessary article information presented such as (image, title, date, other).
+- Error state handling.
+- Loading state handling with a skeleton to reduce load-time frustration.
+- Enhanced overall accessibility.
+
+## Technologies
+1. JS. 
+2. React.
+3. MUI tools.
+4. Vite for bundling.
+   
+
+## Demo 
+https://news-feed-cad7f22oj-anaskhaled98s-projects.vercel.app/
