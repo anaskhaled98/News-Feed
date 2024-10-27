@@ -12,6 +12,9 @@ export function useFetchArticles() {
   const queryValue = useRef("");
 
   async function loadData(currentCatgeory) {
+    // NOTE Due to News API website doesn't allow fetching data from browser but only from localhost so to skip that
+    // i fetched data from dummy articles data file.
+
     // const response = await fetch(
     //   `https://newsapi.org/v2/top-headlines?category=${currentCatgeory}&country=us&page=${
     //     pageNumber.current
