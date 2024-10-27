@@ -12,19 +12,26 @@ export function useFetchArticles() {
   const queryValue = useRef("");
 
   async function loadData(currentCatgeory) {
-    const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?category=${currentCatgeory}&country=us&page=${
-        pageNumber.current
-      }&q=${queryValue.current}&pageSize=${PAGE_SIZE}&apiKey=${
-        import.meta.env.VITE_NEWS_API_KEY
-      }`
-    );
+    // const response = await fetch(
+    //   `https://newsapi.org/v2/top-headlines?category=${currentCatgeory}&country=us&page=${
+    //     pageNumber.current
+    //   }&q=${queryValue.current}&pageSize=${PAGE_SIZE}&apiKey=${
+    //     import.meta.env.VITE_NEWS_API_KEY
+    //   }`
+    // );
+
+    const response = await fetch("/articles.json");
     const data = await response.json();
 
     if (data.status === "error") {
       throw new Error("An error has occurred.");
     }
-    return data.articles;
+
+    let articles = data.articles.filter(
+      (article) => article.page === pageNumber.current
+    );
+
+    return articles;
   }
 
   const FetchAndUpdateArticles = (currentCategory) => {

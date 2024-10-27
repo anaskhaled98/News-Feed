@@ -5,7 +5,6 @@ import LoadingArticles from "./LoadingArticles";
 
 function NewsFeed(props) {
   const { articles, loading, PAGE_SIZE, category } = props;
-  console.log(loading);
 
   if (!loading && !articles?.length) {
     return (
