@@ -6,11 +6,11 @@
 Once the website is opened, recent hot headlines are fetched. Users can navigate, search, and categorize them.
 
 ## Features
-- User friendly card article appearance.
-- Category Selection.
+- User friendly article appearance.
+- Choose between categories.
 - Search Bar to filter the news.
 - Pagination buttons.
-- Navigate to the original article by clicking on the card.
+- Navigate to the original news source by clicking on the card.
 - All necessary article information presented such as (image, title, date, other).
 - Error state handling.
 - Loading state handling with a skeleton to reduce load-time frustration.
